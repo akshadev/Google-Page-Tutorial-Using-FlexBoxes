@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Google-Flexbox</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            .container {
+                height: 100vh;
+                width: 100%;
+            }
+            .row-nav-box {
+                height: 10%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+            }
+            .left-box,
+            .right-box {
+                margin: 10px;
+            }
+            .left-box span,
+            .right-box span {
+                padding: 10px;
+            }
+
+            .row-image-box,
+            .row-search-box,
+            .row-button-container,
+            .row-info-box {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 20px;
+            }
+            img {
+                width: 400px;
+                height: 200px;
+            }
+
+            input {
+                width: 60%;
+                height: 40px;
+                border-radius: 20px;
+                border: 1px solid gray;
+            }
+            .row-button-container .buttons {
+                display: flex;
+                width: 40%;
+                justify-content: space-evenly;
+            }
+            .row-button-container button {
+                padding: 10px;
+                border: 1px solid gray;
+                border-radius: 5%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row-nav-box">
+                <div class="left-box">
+                    <span>About</span>
+                    <span>Store</span>
+                </div>
+                <div class="right-box">
+                    <span>Gmail</span>
+                    <span>Images</span>
+                    <span>Apps</span>
+                    <span>Sign In</span>
+                </div>
+            </div>
+            <div class="row-image-box">
+                <img
+                    src="https://www.google.com/logos/doodles/2020/stay-home-save-lives-april-23-copy-6753651837108787-law.gif"
+                    alt="google image"
+                />
+            </div>
+            <div class="row-search-box">
+                <input type="text" />
+            </div>
+            <div class="row-button-container">
+                <div class="buttons">
+                    <button type="button">Google Search</button>
+                    <button type="button">I'm Feeling Lucky</button>
+                </div>
+            </div>
+
+            <div class="row-info-box">
+                <a
+                    href="https://www.google.com/url?q=https://www.google.com/search%3Fhl%3Den%26q%3Dcoronavirus%2Btips%26fbx%3Ddothefive&source=hpp&id=19017759&ct=3&usg=AFQjCNEfiQWGcREtcghwjYWS1FcZniN6NA&sa=X&ved=0ahUKEwj4o8yG6ZXpAhVOCM0KHezXD3oQ8IcBCBA"
+                    >Stay Home. Save Lives</a
+                >
+            </div>
+        </div>
+    </body>
+</html>
